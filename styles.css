@@ -717,9 +717,6 @@ footer a {
         text-align: center;
         text-decoration: none;
         padding: 1px 50px;
-        /*border-left-width: 3px;
-        border-right-width: 3px;
-        border-color: white;*/
     }
 
     .active {
@@ -779,12 +776,7 @@ footer a {
         margin-right: 7em;
     }
 
-    .AboutUs main p {
-        font-size: 2em;
-    }
-
     .AboutUs .smalltext {
-        font-size: 1.5em;
         margin-top: 0px;
         margin-left: 1em;
         margin-right: 1em;
@@ -954,6 +946,11 @@ footer a {
     .Walks article {
         padding-left: 3em;
         padding-right: 3em;
+    }
+
+    .AboutUs main section {
+        margin-left: 12em;
+        margin-right: 12em;
     }
 
     .image-overlay img {
