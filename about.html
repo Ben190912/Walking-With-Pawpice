@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <!----  Head  ---->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Walking With Pawpice</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+
+
+    <!----  Main Body Section ---->
+    <body class="AboutUs">
+        <!----  Nav Bar--  -->
+        <nav>
+            <!----  Curtain Menu Icon  ---->
+            <p class="menu-icon-style" onclick="openNav()">  &#9776;</p>
+            <p class="menu-tagline-style">    ABOUT US</p>
+
+            <!---- Expanded Nav Bar ---->
+            <ul id="desktopNav">
+                <li><a href="index.html" class="non-active">HOME</a></li>
+                <li><a href="about.html" class="active">ABOUT US</a></li>
+                <li><a href="walks.html" class="not-active">WALKS</a></li>
+                <li><a href="request.html" class="not-active">REQUEST</a></li>
+            </ul>
+
+            <!----  Curtain Menu Layer  ---->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="walks.html">WALKS</a>
+                <a href="request.html">REQUEST</a>
+                </div>
+            </div>
+        </nav>
+
+        <!---- Main ---->
+        <main>
+            <section>
+                <p>Walking With Pawpice is a website dedicated to helping people find suitable dog-friendly walks in the greater Hawke's Bay area.</p>
+                <p>There are plenty of scenic and beautiful areas in our region, but not all of them allow dogs, and some may be too difficult for the average dog. Our website allows you to browse by area, difficulty or search on a map so you can plan an outing with your furry friend.</p> 
+                <p>Walking with Pawpice is a small student project developed by Ben Mason for the BCS degree at EIT. The site is in a state of ongoing development, and features may be subject to change as the site reaches maturity. The site is for educational purposes only. The site is a showcase for the skills I'm learning in Website development. This site complies with the NZ Privacy Act 2020.</p>
+                <hr>
+                <p>About Me</p>
+                <article id="profile">
+                    <article id="biogroup">
+                    <img src="images/Displaypic.jpg" id="profileimg" height="120" alt="Profile Picture">
+                    <p class="smalltext">My name is Ben Mason and I'm a BCS student based in Napier. I like video games, metalcore, and hiking. I needed a website idea, and decided to make one about walking dogs as thats an activity I do daily. The rest of the page below was not outlined in the wireframes or plans, and is purely here to showcase adding both audio and video into a webpage.</p>
+                    </article>
+                    <hr>
+                    <article id="spotifygroup">
+                        <p class="smalltext">This is my current playlist I listen to while walking my dog.</p>
+                        <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7CWvYsrLdg07xrBTRP2RZI?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </article>
+                    <hr>
+                    <article id="youtubegroup">   
+                        <p class="smalltext">This is a dog training video about what to do if your dog pulls while walking on a lead.</p>
+                        <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/LmZeyksPJhU?si=pT8aD8wVk1deY5TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </article>
+                </article>
+            </section>
+        </main>
+
+        <!---- Footer Section ---->
+        <footer>
+            <p>Developed by Ben Mason</p>
+        </footer>
+    </body>
+    <script src="javascript.js"></script>
+</html>

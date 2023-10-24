@@ -1,0 +1,966 @@
+/*Applying the mobile first approach when writing CSS for a web page*/
+
+
+/******* Mobile ********/
+body {
+    background-color: lightblue;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/****** Backgrounds ******/
+
+body.Home {
+    background-image: url("images/Homebg.png"); 
+}
+body.Walks {
+    background-image: url("images/Walksbg.png");
+}
+body.AboutUs {
+    background-image: url("images/AboutUsbg.png");
+}
+body.Request {
+    background-image: url("images/Requestbg.png");
+}
+#napiermain {
+    background-image: url("images/Napier.jpg");
+}
+#hastingsmain {
+    background-image: url("images/hastings.jpg");
+}
+#regionmain {
+    background-image: url("images/WiderRegion.jpg");
+}
+#andersonpark {
+    background-image: url("images/andersonpark.jpg");
+}
+
+
+/***** Nav Bar *****/
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a605ab2 ;
+    z-index: 2;
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2.0em;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 0.2em;
+  font-size: 4.0em;
+}
+
+.overlay a {
+    font-size: 2.0em;
+}
+
+
+#desktopNav {
+    display: none;
+}
+
+.menu-icon-style {
+    flex: 3.5;
+    font-size: 2.5em;
+    cursor: pointer;
+    white-space: pre;
+}
+
+.menu-tagline-style {
+    flex: 6.5;
+    font-size: 2.5em;
+}
+
+
+
+/**** Home Page content styles ****/
+
+.Home main {
+    text-align: center;
+    height: 80vh;
+}
+
+.Home main h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.Home main h2 {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.Home main section {
+    background-color: #594f49b2;
+    border-radius: 25px;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-bottom: 0.2em;
+    box-shadow: 5px 5px #151312b2;
+}
+
+
+/**** Walks Page ****/
+
+.Walks main {
+    display: flex;
+    min-height: 80vh;
+    margin-left: 1.8em;
+    margin-right: 1.8em;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Walks main a {
+    color: white;
+    text-decoration:none;
+}
+
+.Walks article {
+	margin: 1em;
+	padding: 1.0em;
+    padding-left: 2em;
+    padding-right: 2em;
+	background-color: #594f49b2;	
+	box-shadow: 5px 5px #151312b2;
+	border-radius: 6px;
+	flex: 1;
+}
+
+.Walks article h3 {
+	margin: 0.5em;
+    font-size: 1.8em;
+	text-align: center;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.Walks article img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 6px;
+}
+
+.Walks article p {
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.8;
+    font-size: 1.2em;
+}
+
+.Walks section {
+	flex-direction: column;
+}
+
+
+/**** About Us Page ****/
+
+.AboutUs .menu-tagline-style {
+    position: relative;
+    right: 15px;
+}
+
+.AboutUs main {
+    text-align: center;
+    min-height: 80vh;
+}
+
+.AboutUs main section {
+    background-color: #594f49b2;
+    border-radius: 25px;
+    box-shadow: 5px 5px #151312b2;
+    padding: 0.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.AboutUs main p {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.AboutUs .smalltext {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+#profile {
+    margin: 2em;
+}
+
+#profile img {
+    border-radius: 30px;
+}
+
+#youtube {
+    width: auto;
+    border-radius: 15px;
+}
+
+
+
+/**** Request Page ****/
+
+.Request .menu-tagline-style {
+    position: relative;
+    right: 8px;
+}
+
+.Request main {
+    text-align: center;
+    min-height: 80vh;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    overflow: auto;
+}
+
+.Request section h1 {
+    font-size: 2em;
+}
+
+.Request section {
+    background-color: #594f49b2;
+    border-radius: 25px;
+    box-shadow: 5px 5px #151312b2;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    padding: 0.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.Request article {
+    display: flex;
+    flex-direction: column;
+}
+
+.Request main div {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.Request label {
+    margin-bottom: 0.4em;
+}
+
+.Request input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+.Request .onelinetext {
+    background-color: #6a605a;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    border: 0px;
+    width: 100%;
+    height: 2em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.Request select {
+    background-color: #6a605a;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    border: 0px;
+    width: 101%;
+    height: 2.4em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-left: 0.5em;
+}
+
+.Request input[type="file"] {
+    font-family: "Hind", "Sans-Serif";
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #6a605a;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    letter-spacing: 1px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+.Request textarea::placeholder {
+    color: rgb(180, 180, 180);
+    font-family: "Hind", "Sans-Serif";
+
+}
+
+.Request .multilinetext {
+    background-color: #6a605a;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    border: 0px;
+    width: 98%;
+    height: 8em;
+    border-radius: 10px;
+    padding-left: 0.8em;
+    padding-top: 0.6em;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.submitbutton {
+    display: block;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#button {
+    background-color: teal;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    letter-spacing: 1px;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.5em;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/***** Location page *****/
+
+#hastingsmain .menu-tagline-style {
+    position: relative;
+    right: 12px;
+}
+
+#regionmain .menu-tagline-style {
+    position: relative;
+    right: 36px;
+}
+
+.location main {
+    text-align: center;
+    min-height: 80vh;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    letter-spacing: 1px;
+    overflow: auto;
+}
+
+.location section {
+    background-color: #594f49b2;
+    border-radius: 25px;
+    box-shadow: 5px 5px #151312b2;
+    padding: 0.5em;
+    margin: 3em;
+}
+
+.location main a {
+    color: white;
+    text-decoration:none;
+    margin: 1em;
+}
+
+.location article {
+    background-color: #594f49;
+    border-radius: 15px;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.location main div img {
+    border-radius: 2px;
+}
+
+.location main div img {
+    width: 120px;
+    height: 80px;
+}
+
+
+/***** Specific Walk pages *****/
+
+.walklocation .menu-tagline-style {
+    position: relative;
+    right: 35px;
+    font-size: 2em;
+}
+
+.walklocation main {
+    min-height: 80vh;
+    font-family: "Hind", "Sans-Serif";
+    color: white;
+    letter-spacing: 1px;
+    overflow: auto;
+}
+
+.walklocation section {
+    background-color: #594f49b2;
+    border-radius: 25px;
+    box-shadow: 5px 5px #151312b2;
+    padding: 0.5em;
+    margin: 3em;
+    text-align: center;
+}
+
+.walklocation h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0em;
+}
+
+.walklocation p {
+    margin: 0em;
+}
+
+.walklocation main div {
+    margin-bottom: 1em;
+}
+
+.walklocation iframe.googlemaps {
+    width: 90%;
+    height: 12em;
+}
+
+.walklocation main img {
+    width: 90%;
+    height: 12em;
+}
+
+.image-overlay .closeimage {
+    position: absolute;
+    right: 0.2em;
+    font-size: 4.0em;
+}
+
+.image-overlay img {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: 8em;
+    margin-left: 2.6em
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 1em;
+    text-align: center;
+    background-color: #6a605ab2 ;
+    z-index: 2;
+}
+
+footer a {
+    color: lightseagreen;
+}
+
+
+
+
+/***** Small Phone compatibility *****/
+/*When the viewport: < 375px => Set these styles*/ 
+@media screen and (max-width: 424px) 
+{
+    #regionmain .menu-tagline-style {
+        font-size: 2em;
+    }
+
+    .walklocation .menu-tagline-style {
+        font-size: 1.6em;
+    }
+
+    .Walks main {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #youtube {
+        width: 200px;
+        height: 200px;
+    }
+
+    input#myfile {
+        width: 250px;
+    }
+
+}
+
+
+
+
+/***** Tablet ******/
+/*When the viewport: between 426px - 768px => Set these styles*/ 
+@media screen and (min-width: 426px) 
+{
+
+    .menu-tagline-style {
+        white-space: pre;
+    }
+
+    /***Walks Page***/
+
+    .Walks main {
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+
+    .Walks article {
+        margin: 3em;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    /***About Us Page***/
+
+    .AboutUs main section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .AboutUs main p {
+        font-size: 1.5em;
+    }
+
+    .AboutUs .smalltext {
+        font-size: 1.2em;
+    }
+
+    #profile img {
+        height: 150px;
+    }
+
+    #youtube {
+        height: 315px;
+        width: 560px;
+    }
+
+    #spotify {
+        width: 560px;
+    }
+
+    /***Request Page***/
+
+    .Request div.submitbutton {
+        align-items: center;
+    }
+
+    /***Location Page***/
+
+    .location main div img {
+        height: 120px;
+        width: 180px;
+    }
+
+    .location main p {
+        font-size: 1.2em;
+    }
+
+
+    /***** Specific Walk pages *****/
+
+    .walklocation .menu-tagline-style {
+        font-size: 2.2em;
+    }
+
+    .walklocation main p {
+        font-size: 1.2em;
+    }
+
+    .walklocation main div {
+        margin-bottom: 2em;
+    }
+
+    .walklocation iframe.googlemaps {
+        width: 70%;
+        height: 18em;
+    }
+
+    .walklocation main img {
+        width: 70%;
+        height: 18em;
+    }
+
+    .walklocation main p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .image-overlay img {
+        margin-left: 4.8em
+    }
+}
+
+
+/***** Desktop ******/
+/*When the viewport is 768px or larger => Set these styles*/ 
+@media screen and (min-width: 769px) 
+{
+
+    body {
+        background-size: cover;
+    }
+
+    .menu-icon-style {
+        display: none
+    }
+
+    .menu-tagline-style {
+        display: none
+    }
+
+    #desktopNav {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+
+    nav ul li {
+        display: block;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 1px 50px;
+        /*border-left-width: 3px;
+        border-right-width: 3px;
+        border-color: white;*/
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    .not-active:hover {
+        background-color: #6a605ad2;
+    }
+
+    /***** Home page *****/
+
+    .Home main {
+        text-align: left;
+    }
+
+    .Home main section {
+        position: relative;
+        display: inline-block;
+        padding: 30px;
+        top: 450px;
+    }
+
+    /***** Walks page *****/
+
+    .Walks main {
+        margin-left: 0em;
+        margin-right: 0em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Walks main a {
+        align-items: center;
+        text-align: center;
+    }
+
+    .Walks article {
+        margin: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .Walks section {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /***About Us Page***/
+
+    .AboutUs main section {
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+
+    .AboutUs main p {
+        font-size: 2em;
+    }
+
+    .AboutUs .smalltext {
+        font-size: 1.5em;
+        margin-top: 0px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #profile img {
+        height: 200px;
+    }
+
+    #biogroup {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2em;
+    }
+
+    #spotifygroup {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2em;
+    }
+
+    #youtubegroup {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2em;
+    }
+
+
+    /***Request Page***/
+
+    .Request section {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .Request article {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Request div {
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 40%;
+    }
+
+    .Request div.submitbutton {
+        width: 16em;
+    }
+    
+    .Request select {
+        margin-bottom: 2.0em;
+    }
+
+
+    /***Location Page***/
+
+    .location section {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+
+    .location h1 {
+        font-size: 2.5em;
+    }
+
+    .location article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        text-align: left;
+    }
+
+    .locationpicture {
+        margin: 2em;
+    }
+
+    .location h2 {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        font-size: 2em;
+    }
+
+    .location p {
+        font-size: 1.2em;
+    }
+
+
+    /***** Specific Walk pages *****/
+
+    .walklocation main h1 {
+        text-align: left;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+        font-size: 2.5em;
+    }
+
+    .walklocation article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+
+    .walklocation iframe.googlemaps {
+        height: 15em;
+        width: 20em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .walklocation main img {
+        height: 15em;
+        width: 20em;
+        margin-left: 2em;
+        margin-right: 2em;
+        cursor: pointer;
+    }
+
+    .walklocation main p {
+        font-size: 1.5em;
+    }
+
+    .walklocation .walkinfo {
+        text-align: left;
+    }
+
+    .walklocation .walkdescription {
+        text-align: left;
+    }
+
+    .walklocation .walkimage {
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    .image-overlay img {
+        width: 70%;
+        height: auto;
+        margin-left: 10em
+    }
+
+    .walklocation .closeimage {
+        cursor: pointer;
+    }
+
+    /***Footer***/
+
+    footer {
+        font-size: 1.2em;
+    }
+}
+
+
+
+/***** For larger screens, Large Laptops *****/
+/*When the viewport is 1440px or larger => Set these styles*/ 
+@media screen and (min-width: 1440px) 
+{
+    .Walks article {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .image-overlay img {
+        width: 60%;
+        height: auto;
+        margin-top: 6em;
+        margin-left: 18em
+    }
+
+}
