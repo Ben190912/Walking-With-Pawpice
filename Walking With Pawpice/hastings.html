@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <!----  Head  ---->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Walking With Pawpice</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+
+
+    <!---- Body ---->
+    <body id="hastingsmain" class="location">
+        <!----  Nav Bar--  -->
+        <nav>
+            <!----  Curtain Menu Icon  ---->
+            <p class="menu-icon-style" onclick="openNav()">  &#9776;</p>
+            <p class="menu-tagline-style">     HASTINGS</p>
+
+            <!---- Expanded Nav Bar ---->
+            <ul id="desktopNav">
+                <li><a href="index.html" class="not-active">HOME</a></li>
+                <li><a href="about.html" class="not-active">ABOUT US</a></li>
+                <li><a href="walks.html" class="active">WALKS</a></li>
+                <li><a href="request.html" class="not-active">REQUEST</a></li>
+            </ul>
+
+            <!----  Curtain Menu Layer  ---->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="walks.html">WALKS</a>
+                <a href="request.html">REQUEST</a>
+                </div>
+            </div>
+        </nav>
+
+        <!---- Main ---->
+        <main>
+            <section>
+                <h1>Hastings Dog Walks:</h1>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/pakowhaipark.jpg" height="80" alt="Picture of Pakowhai Regional Park">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Pakowhai Regional Park</h2>
+                            <p>Pakowhai Regional Park is a dedicated dog walking park with agility areas, grassy fields, and water. Care must be taken with dogs off-leash as many dogs and owners frequent the park. There are both leashed and off-leash areas. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/cornwallpark.jpg" height="80" alt="Picture of Cornwall Park">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Cornwall Park</h2>
+                            <p>Cornwall Park is a free to use city park with an open field and walking track. There are both leashed and off-leash areas. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/hbregionalpark.jpg" height="80" alt="Picture of Marine Parade">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Hawkes Bay Regional Park</h2>
+                            <p>Hawkes Bay Regional Park is a dedicated sports field with some walking tracks available for dogs. There are only leashed areas available here. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+            </section>
+        </main>
+
+        <!---- Footer ---->
+        <footer>
+            <p>Walking with pawpice is a small, student made project. For more information <a href="about.html">click here</a></p>
+        </footer>
+    </body>
+    <script src="javascript.js"></script>
+</html>

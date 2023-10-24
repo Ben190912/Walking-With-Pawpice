@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+    <!----  Head  ---->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Walking With Pawpice</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+
+
+    <!----  Main Body Section ---->
+    <body class="Request">
+        <!----  Nav Bar--  -->
+        <nav>
+            <!----  Curtain Menu Icon  ---->
+            <p class="menu-icon-style" onclick="openNav()">  &#9776;</p>
+            <p class="menu-tagline-style">     REQUEST</p>
+
+            <!---- Expanded Nav Bar ---->
+            <ul id="desktopNav">
+                <li><a href="index.html" class="not-active">HOME</a></li>
+                <li><a href="about.html" class="not-active">ABOUT US</a></li>
+                <li><a href="walks.html" class="not-active">WALKS</a></li>
+                <li><a href="request.html" class="active">REQUEST</a></li>
+            </ul>
+
+            <!----  Curtain Menu Layer  ---->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="walks.html">WALKS</a>
+                <a href="request.html">REQUEST</a>
+                </div>
+            </div>
+        </nav>
+
+        <!---- Main ---->
+        <main>
+            <section>
+                <h1>Make a Request</h1>
+                <article>
+                    <div>
+                        <form class="form">
+                            <label for="nofsub">Name of Submission:</label>
+                            <br>
+                            <input type="text" id="nofsub" class="onelinetext" name="nameofsubmission" placeholder="Name of your requested walk.. (Required)" required>
+                            <br>
+
+                            <label for="coord">Co-ordinates of walk:</label>
+                            <br>
+                            <input type="text" id="coord" class="onelinetext" name="coordinates" placeholder="Where is the walk found.. (Required)" required>
+                            <br>
+
+                            <label for="regionsubmit">Region of Submission</label>
+                            <br>
+                            <select id="regionsubmit" name="regionofsubmission" required>
+                                <option value="napier">Napier</option>
+                                <option value="hastings">Hastings</option>
+                                <option value="wider">Wider Region</option>
+                            </select>
+                            <br>
+                            
+                            <label for="myfile">Upload a Picture:</label>
+                            <br>
+                            <input type="file" id="myfile" name="filename">
+                            <br>
+
+                        </form>
+                    </div>
+                    <!-- If the JS only takes one form, come back and add them together in one form then seperate with divs-->
+                    <div>
+                        <form class="form">
+                            <label for="uploadname">Uploader's Name:</label>
+                            <br>
+                            <input type="text" id="uploadname" class="onelinetext" name="uploadersname" placeholder="Your Name..">
+                            <br>
+
+                            <label for="uploademail">Uploader's Email:</label>
+                            <br>
+                            <input type="text" id="uploademail" class="onelinetext" name="uploadersemail" placeholder="Your Email..">
+                            <br>
+
+                            <label for="deets">Details of Walk:</label>
+                            <br>
+                            <textarea id="deets" class="multilinetext" name="walkdetails" placeholder="Enter any details you wish to submit here.."></textarea>
+                        </form>
+                    </div>
+                </article>
+                <div class="submitbutton">
+                    <input type="submit" id="button" name="submitform">
+                </div>
+            </section>
+        </main>
+
+        <!---- Footer Section ---->
+        <footer>
+            <p>Walking with pawpice is a small, student made project. For more information <a href="about.html">click here</a></p>
+        </footer>
+        
+    </body>
+
+    <script src="javascript.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('YFWVju4QZYAnVk602')
+    </script>
+
+</html>

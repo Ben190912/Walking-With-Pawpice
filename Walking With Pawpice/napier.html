@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <!----  Head  ---->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Walking With Pawpice</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+
+
+    <!---- Body ---->
+    <body id="napiermain" class="location">
+        <!----  Nav Bar--  -->
+        <nav>
+            <!----  Curtain Menu Icon  ---->
+            <p class="menu-icon-style" onclick="openNav()">  &#9776;</p>
+            <p class="menu-tagline-style">      NAPIER</p>
+
+            <!---- Expanded Nav Bar ---->
+            <ul id="desktopNav">
+                <li><a href="index.html" class="not-active">HOME</a></li>
+                <li><a href="about.html" class="not-active">ABOUT US</a></li>
+                <li><a href="walks.html" class="active">WALKS</a></li>
+                <li><a href="request.html" class="not-active">REQUEST</a></li>
+            </ul>
+
+            <!----  Curtain Menu Layer  ---->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="walks.html">WALKS</a>
+                <a href="request.html">REQUEST</a>
+                </div>
+            </div>
+        </nav>
+
+        <!---- Main ---->
+        <main>
+            <section>
+                <h1>Napier Dog Walks:</h1>
+                <a href="andersonpark.html">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/andersonpark.jpg" height="80" alt="Picture of Anderson Park">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Anderson Park</h2>
+                            <p>Anderson Park is a free to use city park with an open field and a walking track. There are both leashed and off-leash areas. There is local wildlife so caution must be taken with your dog off-leash.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/parkisland.jpg" height="80" alt="Picture of Park Island">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Park Island</h2>
+                            <p>Park Island is a free to use city park with an open field and walking track. There are both leashed and off-leash areas. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/marineparade.jpg" height="80" alt="Picture of Marine Parade">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Marine Parade</h2>
+                            <p>Marine parade is a centrally positioned beach in the heart of Napier CBD. It has grassey and stone areas, with a walking track. There are both leashed and off-leash areas. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+            </section>
+        </main>
+
+        <!---- Footer ---->
+        <footer>
+            <p>Walking with pawpice is a small, student made project. For more information <a href="about.html">click here</a></p>
+        </footer>
+    </body>
+    <script src="javascript.js"></script>
+</html>

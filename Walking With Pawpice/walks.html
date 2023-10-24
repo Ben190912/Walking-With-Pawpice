@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <!----  Head  ---->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Walking With Pawpice</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+
+
+    <!----  Main Body Section ---->
+    <body class="Walks">
+        <!----  Nav Bar--  -->
+        <nav>
+            <!----  Curtain Menu Icon  ---->
+            <p class="menu-icon-style" onclick="openNav()">  &#9776;</p>
+            <p class="menu-tagline-style">    WALKS</p>
+
+            <!---- Expanded Nav Bar ---->
+            <ul id="desktopNav">
+                <li><a href="index.html" class="not-active">HOME</a></li>
+                <li><a href="about.html" class="not-active">ABOUT US</a></li>
+                <li><a href="walks.html" class="active">WALKS</a></li>
+                <li><a href="request.html" class="not-active">REQUEST</a></li>
+            </ul>
+
+            <!----  Curtain Menu Layer  ---->
+            <div id="myNav" class="overlay">
+                <a href="javascript" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="walks.html">WALKS</a>
+                <a href="request.html">REQUEST</a>
+                </div>
+            </div>
+        </nav>
+
+        <!---- Main ---->
+        <main class="WalksMain">
+            <section>
+                <a href="napier.html">
+                <article>
+                    <h3>Napier</h3>
+                    <img src="images/Napier.jpg" height="150" alt="Picture of Napier">
+                    <p>17 Walks</p>
+                    <p>Difficulty:<br>Easy - Intermediate - Hard</p>
+                    <p>3 Exercise areas</p>
+                    <p>7 Parks</p>
+                </article>
+                </a>
+                <a href="hastings.html">
+                <article>
+                    <h3>Hastings</h3>
+                    <img src="images/Hastings.jpg" height="150" alt="Picture of Hastings">
+                    <p>8 Walks</p>
+                    <p>Difficulty:<br>Easy - Intermediate<br></p>
+                    <p>1 Exercise areas</p>
+                    <p>4 Parks</p>
+                </article>
+                </a>
+                <a href="region.html">
+                <article>
+                    <h3>Wider Region</h3>
+                    <img src="images/WiderRegion.jpg" height="150" alt="Picture of Te Mata Peak">
+                    <p>32 Walks</p>
+                    <p>Difficulty:<br>Easy - Intermediate - Hard</p>
+                    <p>3 Exercise areas</p>
+                    <p>9 Parks</p>
+                </article>
+            </a>
+            </section>
+        </main>
+
+        <!---- Footer Section ---->
+        <footer>
+            <p>Walking with pawpice is a small, student made project. For more information <a href="about.html">click here</a></p>
+        </footer>
+    </body>
+    <script src="javascript.js"></script>
+</html>

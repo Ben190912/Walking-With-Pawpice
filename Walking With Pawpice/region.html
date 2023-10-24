@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <!----  Head  ---->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Walking With Pawpice</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+
+
+    <!---- Body ---->
+    <body id="regionmain" class="location">
+        <!----  Nav Bar--  -->
+        <nav>
+            <!----  Curtain Menu Icon  ---->
+            <p class="menu-icon-style" onclick="openNav()">  &#9776;</p>
+            <p class="menu-tagline-style">  WIDER REGION</p>
+
+            <!---- Expanded Nav Bar ---->
+            <ul id="desktopNav">
+                <li><a href="index.html" class="not-active">HOME</a></li>
+                <li><a href="about.html" class="not-active">ABOUT US</a></li>
+                <li><a href="walks.html" class="active">WALKS</a></li>
+                <li><a href="request.html" class="not-active">REQUEST</a></li>
+            </ul>
+
+            <!----  Curtain Menu Layer  ---->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="walks.html">WALKS</a>
+                <a href="request.html">REQUEST</a>
+                </div>
+            </div>
+        </nav>
+
+        <!---- Main ---->
+        <main>
+            <section>
+                <h1>Dog Walks in the wider HB Region:</h1>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/puketapupark.jpg" height="80" alt="Picture of Puketapu Park">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Puketapu Park</h2>
+                            <p>Puketapu Park is a free to use regional park in Puketapu. It features a large grassy area, and a playground. The whole park is an off-leash area, however care must be taken around kids in the playground. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/haumoanabeach.jpg" height="80" alt="Picture of Haumoana Beach">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Haumoana Beach</h2>
+                            <p>Haumoana Beach is a free to access stony beach. The entire length of the beach is an off-leash area. Care must be taken to supervise your dog around the waves, incase they are swept out to sea. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <div class="locationpicture">
+                        <img src="images/tematapeak.jpg" height="80" alt="Picture of Te Mata Peak Redwoods">
+                        </div>
+                        <div class="locationinfo">
+                            <h2>Te Mata Peak Walking Tracks</h2>
+                            <p>Te Mata Peak Walking tracks are a series of walking tracks on the city side of Te Mata Peak. There are differing tracks for all skill levels however, there are only leashed areas available here. NOTE: this link does not work, and just for display purposes.</p>
+                        </div>
+                    </article>
+                </a>
+            </section>
+        </main>
+
+        <!---- Footer ---->
+        <footer>
+            <p>Walking with pawpice is a small, student made project. For more information <a href="about.html">click here</a></p>
+        </footer>
+    </body>
+    <script src="javascript.js"></script>
+</html>
